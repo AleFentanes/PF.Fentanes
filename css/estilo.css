@@ -305,6 +305,20 @@ footer{
     margin-left: 5%;
     
 }
+.boton-formulario{
+    width: 50%;
+    height: 40%;
+    background-color: rgb(97, 169, 167);
+    color: rgb(243, 243, 239);
+    font-size: 14px;
+    font-style: bold;
+    justify-content: center;
+    align-items: right;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    margin-left: 30%;
+}
 
 /* para adaptarlo en dispositivo movil*/
 @media screen and (min-width:600px) {
