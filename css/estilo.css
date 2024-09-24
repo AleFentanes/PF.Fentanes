@@ -293,8 +293,19 @@ footer{
     font-size: 30px;
     font-family: monospace;
 }
+/*para contacto*/
+.fuente{
+    color: rgb(97, 169, 167);;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: justify;
+    text-align: justify;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    
+}
 
- 
 /* para adaptarlo en dispositivo movil*/
 @media screen and (min-width:600px) {
 /*main*/
