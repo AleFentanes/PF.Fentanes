@@ -313,11 +313,10 @@ footer{
     font-size: 14px;
     font-style: bold;
     justify-content: center;
-    align-items: right;
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 15%;
-    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+    margin-left: 10%;
 }
 
 /* para adaptarlo en dispositivo movil*/
