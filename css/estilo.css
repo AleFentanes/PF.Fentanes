@@ -78,7 +78,7 @@ a{
 .container div:first-child{
     background:none;
     border: none;
-    grid-area: first-child; /*agregado*/
+    grid-area: first-child; 
 }
 
 .color{
@@ -95,7 +95,7 @@ a{
 .container div:nth-child(2){
     background: none;
     border: none;
-    grid-area: nth-child(2); /*agregado*/
+    grid-area: nth-child(2); 
 }
 
 .logo{
@@ -132,7 +132,7 @@ h2{
 .container div:nth-child(3){
     background: none;
     border: none;
-    grid-area: nth-child(3); /*agregado*/
+    grid-area: nth-child(3); 
 }
 
 article{
@@ -155,7 +155,7 @@ iframe{
 .container div:nth-child(4){
     background: none;
     border: none;
-    grid-area: nth-child(4); /*agregado*/
+    grid-area: nth-child(4); 
     margin-block-start: 3%;
     margin-bottom: 8%;
 }
@@ -182,7 +182,7 @@ h3{
 .container div:nth-child(5){
     background-color: white;
     border: white;
-    grid-area: nth-child(5); /*agregado*/
+    grid-area: nth-child(5); 
     columns: 2;
 }
 
@@ -252,8 +252,8 @@ footer{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
 }
-/*para nuevo y catálogo*/
 
+/*para nuevo y catálogo*/
 .card-img-top{
     display: flex;
     flex-direction: column;
@@ -270,7 +270,6 @@ footer{
 }
 
 /*para catálogo*/
-
 .d-block w-100{
     display: flex;
     flex-direction: column;
@@ -293,9 +292,10 @@ footer{
     font-size: 30px;
     font-family: monospace;
 }
+
 /*para contacto*/
 .fuente{
-    color: rgb(97, 169, 167);;
+    color: rgb(97, 169, 167);
     font-size: 14px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     justify-content: justify;
@@ -341,8 +341,8 @@ h3{
     font-size: 16px;
 }
 }
-/* para adaptarlo en ipad*/
 
+/* para adaptarlo en ipad*/
 @media screen and (min-width:1024px) {
     .container{
         display: grid;
@@ -356,18 +356,22 @@ h3{
             gap: 8px;
     }
 .container header{
-    height: 100px;
+    height: 80px;
 }
 h1{
-    font-size:40px;
-    justify-content: center;
+    font-size:30px;
 }  
-
 .banner{
-    height: 450px;
+    height: 400px;
+}
+a{
+    color: white;
+    font-size: 18px;
+    font-family: manrope;
+    text-decoration: none;
 }
 .color{
-    font-size:60px;
+    font-size:50px;
 }
 .container div:nth-child(2){
     columns: 2;
@@ -391,21 +395,18 @@ article{
     font-size: 18px;
     margin-top: 10%;
 }  
-iframe{
-    width: 80%;
-}
 .container div:nth-child(4){
     columns: 2;
 } 
 .subtitulos{
     color: rgb(97, 169, 167);
-    font-size: 40px;
+    font-size: 30px;
     justify-content: left;
 }
 p{
     color: rgb(152, 153, 153);
     font-size: 18px;
-    text-align: justify;
+   
 }
 
 /*para nuevo y catálogo*/
@@ -430,14 +431,16 @@ p{
     width: 100%;
     margin-left: 3%;
 }
-
 .container div:nth-child(5){
     columns: 3;
  } 
+ /*para contacto*/
+.boton-formulario{
+    font-size: 18px;
+}
 }
 
 /* para adaptarlo a escritorio */
-
 @media screen and (min-width:1200px) {
     .container{
         display: grid;
@@ -464,6 +467,8 @@ h1{
 a{
     color: rgb(107, 104, 104);
     font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
 }
 .banner{
     height: 450px;
@@ -471,81 +476,18 @@ a{
 .color{
     font-size:60px;
 }
-.container div:nth-child(2){
-    columns: 2;
-    margin-bottom: 5%;
-}
-.logo{
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    height: 60%;
-    justify-content: center;
-    margin-left: 30%;
-}
-.container div:nth-child(3){
-    background: none;
-    border: none;
-    columns: 2;
-}   
-article{
-    color: rgb(97, 169, 167);
-    font-size: 18px;
-    margin-top: 10%;
-}  
-iframe{
-    width: 80%;
-}
-.container div:nth-child(4){
-    columns: 2;
-} 
-.subtitulos{
-    color: rgb(97, 169, 167);
-    font-size: 40px;
-    justify-content: left;
-}
-p{
-    color: rgb(152, 153, 153);
-    font-size: 18px;
-    text-align: justify;
-}
 
 /*para nuevo y catálogo*/
 .card-img-top{
     display: flex;
     flex-direction: column;
-    height: 120%;
-    width: 110%;
+    height: 125%;
+    width: 115%;
 }
-.card-text{
-    color: rgb(152, 153, 153);
-    font-size: 18px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    justify-content: left;
-    text-align: left;
+/*para contacto*/
+.fuente{
+    font-size: 18px; 
 }
-
-/*para catálogo*/
-.visualcat{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 3%;
-}
-
-/*para nosotros*/
-.subtitulosnosotros{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    color: rgb(97, 169, 167);
-    font-size: 30px;
-    font-family: monospace;
-}
-
-.container div:nth-child(5){
-    columns: 3;
- } 
 }
 
      
