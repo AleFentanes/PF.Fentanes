@@ -72,7 +72,7 @@ a{
         "nth-child(2) nth-child(2) nth-child(2)"
         "nth-child(3) nth-child(3) nth-child(3)"
         "nth-child(4) nth-child(4) nth-child(4)"
-        "nth-child(5) nth-child(5) nth-child(5)";  /*agregado*/
+        "nth-child(5) nth-child(5) nth-child(5)";  
 }
  /*hijo1*/   
 .container div:first-child{
@@ -378,7 +378,8 @@ footer{
         font-size: 30px;
     }
     .descripcion{
-        font-size: 12px;
+        font-size: 14px;
+        text-align: justify;
     }
     /*para nuevo y catálogo*/
     .card-img-top{
@@ -403,35 +404,7 @@ footer{
     }
     }
 
-/* para adaptarlo en dispositivo movil*/
-@media screen and (min-width:600px) {
-.banner{
-    display: flex;
-    flex-direction: row;
-    height: 222px;
-}
-/*main*/
-.color{
-    font-size:40px;
-}
-/*hijo3*/
-article{
-    color: rgb(152, 153, 153);
-}
-/*hijo4*/
-h3{
-    font-size: 18px;
-    font-style: normal;
-}
-/*hijo5*/
-.boton{
-    width: 50%;
-    height: 30%;
-    font-size: 16px;
-}
-}
-
-/* para adaptarlo en ipad-horizontal*/
+/* para adaptarlo en ipad*/
 @media screen and (min-width:1024px) {
     .container{
         display: grid;
@@ -451,7 +424,7 @@ h1{
     font-size:35px;
 }  
 .banner{
-    height: 400px;
+    height: 380px;
 }
 a{
     color: white;
@@ -473,6 +446,12 @@ a{
     height: 60%;
     justify-content: center;
     margin-left: 30%;
+}
+.anuncio{
+    font-size: 25px;
+}
+h2{
+    font-size: 25px;
 }
 .container div:nth-child(3){
     background: none;
@@ -505,6 +484,10 @@ p{
     margin-bottom: 3%; 
     margin-left: 15%;
 }
+.descripcion{
+    font-size: 16px;
+    text-align: center;
+}
 
 /*para nuevo y catálogo*/
 .card-img-top{
@@ -514,11 +497,10 @@ p{
     width: 90%;
 }
 .card-text{
-    color: rgb(152, 153, 153);
-    font-size: 18px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
     justify-content: center;
-    text-align: center;
+    text-align: left;
+    margin-left: 35%;
 }
 /*para catálogo*/
 .visualcat{
@@ -573,9 +555,8 @@ a{
     font-size:60px;
 }
 .anuncio{
-    font-size: 25px;
+    font-size: 30px;
 }
-
 h2{
     font-size: 25px;
 }
