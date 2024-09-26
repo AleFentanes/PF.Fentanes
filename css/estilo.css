@@ -12,10 +12,9 @@
         "nav nav nav"
         "main main main"
         "footer footer footer";
-        gap: 5px;
+        gap: 5px;}
 
 /*header*/
-}
 .container header{
     background-color: rgb(97, 169, 167);
     grid-area: header;
@@ -26,7 +25,7 @@ h1{
     display: flex;
     flex-direction: row;
     color: rgb(246, 249, 249);
-    font-size:35px;
+    font-size:14px; /*estaba en 35*/
     justify-content: center;
     text-align: center;
     margin: 2%;
@@ -54,7 +53,7 @@ li{
 
 a{
     color: white;
-    font-size: 15px;
+    font-size: 10px; /*estaba en 15*/
     font-family: manrope;
     text-decoration: none;
 }
@@ -87,16 +86,17 @@ a{
     justify-content:center;
     text-align: center;
     color: rgb(97, 169, 167);
-    font-size:60px;
+    font-size:30px; /*estaba en 60*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 5%;
 }
-/*
+
 .banner{
     display: flex;
     flex-direction: row;
-    height: 225px;
-}*/
+    justify-content: center;
+    height: 150px; /*estaba en 223*/
+}
 /*hijo2*/
 .container div:nth-child(2){
     background: none;
@@ -115,7 +115,7 @@ a{
 
 .anuncio{
     color: rgb(237, 150, 221);
-    font-size: 22px;
+    font-size: 18px; /*estaba en 22*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 8%;
     margin-right: 8%;
@@ -129,7 +129,7 @@ h2{
     flex-direction: row;
     justify-content:right;
     color: rgb(174, 171, 171);
-    font-size: 25px;
+    font-size: 18px; /*estaba en 25*/
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 5%;
 }
@@ -138,16 +138,15 @@ h2{
 .container div:nth-child(3){
     background: none;
     border: none;
-    grid-area: nth-child(3); 
+    grid-area: nth-child(3);
 }
 
 article{
-    color: rgb(152, 153, 153);
-    font-size: 18px;
+    color: rgb(97, 169, 167);
+    font-size: 14px; /*estaba en 18px*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 5%;
     text-align: justify; 
-    columns: 1/2; 
 }
 
 iframe{
@@ -171,7 +170,7 @@ p{
     margin-left: 5%;
     margin-bottom: 2%;
     color: rgb(152, 153, 153);
-    font-size: 18px;
+    font-size: 14px;  /*estaba en 18*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
 }
@@ -180,7 +179,7 @@ h3{
     margin-left: 5%;
     margin-top: 4%;
     margin-bottom: 4%;
-    font-size: larger;
+    font-size: 16px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(97, 169, 167);
 }
@@ -197,7 +196,7 @@ h3{
     flex-direction: column;
     height: 100%;
     width: 90%;
-    margin-left: 15px; 
+    margin-left: 10%; /*estaba en 15*/
 }
 
 .boton{
@@ -205,7 +204,7 @@ h3{
     height: 30%;
     background-color: rgb(97, 169, 167);
     color: rgb(243, 243, 239);
-    font-size: 16px;
+    font-size: 12px; /*estaba en 16*/
     border-radius: 10px;
     font-style: bold;
     justify-content: center;
@@ -237,7 +236,7 @@ footer{
     flex-direction: row;
     justify-content:center;
     color: rgb(174, 171, 171);
-    font-size: 40px;
+    font-size: 30px; /*estaba en 40*/
     font-family: monospace;
 }
 
@@ -253,7 +252,7 @@ footer{
     margin-top: 5%;
     margin-bottom: 5%;
     color: rgb(152, 153, 153);
-    font-size: 16px;
+    font-size: 12px; /*estaba en 16*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
 }
@@ -262,14 +261,15 @@ footer{
 .card-img-top{
     display: flex;
     flex-direction: column;
-    height: 95%;
-    width: 85%;
+    height: 70%; /*estaba en 95*/
+    width: 60%; /*estaba en 85*/
 }
 
 .card-text{
     color: rgb(152, 153, 153);
-    font-size: 16px;
+    font-size: 10px; /*estaba en 16*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-items: left;
     justify-content: left;
     text-align: left;
 }
@@ -294,14 +294,14 @@ footer{
     flex-direction: row;
     justify-content:center;
     color: rgb(97, 169, 167);
-    font-size: 30px;
+    font-size: 20px; /*estaba en 30*/
     font-family: monospace;
 }
 
 /*para contacto*/
 .fuente{
     color: rgb(97, 169, 167);
-    font-size: 14px;
+    font-size: 18px; /*estaba en 14*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     justify-content: justify;
     text-align: justify;
@@ -323,85 +323,91 @@ footer{
     margin-bottom: 20%;
     margin-left: 10%;
 }
-/* para adaptarlo en dispositivo movil*/
-@media screen and (min-width:600px) {
+/* para adaptarlo en ipad*/
+@media screen and (min-width:800px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 35px 35px 1fr 10%;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "main main main"
+            "footer footer footer";
+            gap: 5px;
+        }
+    /*header*/
     h1{
-        font-size:13px;
+        font-size:25px; /*estaba en 35*/
     }
+    /*nav*/
     a{
-        font-size: 10px;
+        font-size: 14px; /*estaba en 15*/
     }
-    /*hijo1*/
-    .banner{
-        display: flex;
-        flex-direction: row;
-        height: 100px;
-    }
+     /*hijo1*/   
     .color{
-        font-size:25px;
+        font-size:50px; /*estaba en 60*/
+    }
+    .banner{
+        height: 300px; /*estaba en 223*/
     }
     /*hijo2*/
+
     .anuncio{
-        font-size: 18px;
-    }
-    /*hijo3*/
-    article{
-        color: rgb(152, 153, 153);
+        color: rgb(237, 150, 221);
+        font-size: 22px;
     }
     h2{
-        font-size: 16px;
+        font-size: 22px; /*estaba en 25*/
+    }
+    /*hijo3*/
+    .container div:nth-child(3){
+        background: none;
+        border: none;
+        grid-area: nth-child(3);
+    }
+    article{
+        color: rgb(97, 169, 167);
+        font-size: 16px; /*estaba en 18px*/
     }
     /*hijo4*/
     p{
-        font-size: 14px;
-    }
-    h3{
-        font-size: 18;
+        font-size: 16px;  /*estaba en 18*/
     }
     /*hijo5*/
     .info{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 90%;
-        
+        margin-left: 5%; /*estaba en 15*/
     }
     .boton{
-        width: 50%;
-        height: 30%;
-        font-size: 12px;
+        font-size: 14px; /*estaba en 16*/
     }
-    .subtitulos{
-        font-size: 30px;
+    /*para index,promociones,temporada,kits*/
+    .visual{
+        width: 65%;
     }
     .descripcion{
-        font-size: 14px;
-        text-align: justify;
+        font-size: 16px; /*estaba en 16*/
     }
     /*para nuevo y catálogo*/
     .card-img-top{
-        display: flex;
-        flex-direction: column;
-        height: 90%;
-        width: 80%;
-        margin-left: 5px; 
+        height: 95%; /*estaba en 95*/
+        width: 85%; /*estaba en 85*/
+        margin-left: 10%;
     }
     .card-text{
-    font-size: 13px;
-    justify-content: left;
-    text-align: left;
+        font-size: 16px; /*estaba en 16*/
     }
-    /*para contacto*/
-    .fuente{
-    color: rgb(97, 169, 167);
-    font-size: 10px;  
+    .visualcat{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
     }
-    /*para contacto*/
-    .fuente{
-        color: rgb(97, 169, 167);
-        font-size: 12px;
+    /*para nosotros*/
+    .subtitulosnosotros{
+        font-size: 20px; /*estaba en 30*/
     }
-    }
+}
 
 /* para adaptarlo en ipad*/
 @media screen and (min-width:1024px) {
@@ -426,10 +432,7 @@ h1{
     height: 380px;
 }
 a{
-    color: white;
     font-size: 18px;
-    font-family: manrope;
-    text-decoration: none;
 }
 .color{
     font-size:50px;
@@ -478,7 +481,7 @@ p{
 .visual{
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 60%; /*estaba en 65*/
     margin-top: 5%;
     margin-bottom: 3%; 
     margin-left: 15%;
@@ -487,11 +490,8 @@ p{
     font-size: 16px;
     text-align: center;
 }
-
 /*para nuevo y catálogo*/
 .card-img-top{
-    display: flex;
-    flex-direction: column;
     height: 100%;
     width: 90%;
 }
@@ -573,15 +573,11 @@ h2{
 }
 /*para nuevo y catálogo*/
 .card-img-top{
-    display: flex;
-    flex-direction: column;
     height: 120%;
     width: 110%;
 }
 .card-text{
     font-size: 14px;
-    justify-content: center;
-    text-align: left;
     margin-left: 35%;
 }
 /*para contacto*/
