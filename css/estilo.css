@@ -95,7 +95,7 @@ a{
 .banner{
     display: flex;
     flex-direction: row;
-    height: 223px;
+    height: 225px;
 }
 /*hijo2*/
 .container div:nth-child(2){
@@ -335,7 +335,7 @@ footer{
     .banner{
         display: flex;
         flex-direction: row;
-        height: 150px;
+        height: 100px;
     }
     .color{
         font-size:25px;
@@ -549,7 +549,7 @@ a{
     font-style: bold;
 }
 .banner{
-    height: 450px;
+    height: 460px;
 }
 .color{
     font-size:60px;
