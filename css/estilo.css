@@ -91,12 +91,12 @@ a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 5%;
 }
-
+/*
 .banner{
     display: flex;
     flex-direction: row;
     height: 225px;
-}
+}*/
 /*hijo2*/
 .container div:nth-child(2){
     background: none;
@@ -324,7 +324,7 @@ footer{
     margin-left: 10%;
 }
 /* para adaptarlo en dispositivo movil*/
-@media screen and (min-width:380px) {
+@media screen and (min-width:600px) {
     h1{
         font-size:13px;
     }
@@ -359,15 +359,12 @@ footer{
         font-size: 18;
     }
     /*hijo5*/
-    .container div:nth-child(5){
-        columns: 1;
-        }
     .info{
         display: flex;
         flex-direction: column;
-        height: 90%;
-        width: 80%;
-        margin-left: 40px; 
+        height: 100%;
+        width: 90%;
+        
     }
     .boton{
         width: 50%;
@@ -383,14 +380,16 @@ footer{
     }
     /*para nuevo y catálogo*/
     .card-img-top{
+        display: flex;
+        flex-direction: column;
         height: 90%;
         width: 80%;
-        margin-left: 55px; 
+        margin-left: 5px; 
     }
     .card-text{
-    font-size: 12px;
-    justify-content: center;
-    text-align: center;
+    font-size: 13px;
+    justify-content: left;
+    text-align: left;
     }
     /*para contacto*/
     .fuente{
