@@ -1,0 +1,651 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 35px 35px 1fr 10%;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+  gap: 5px;
+}
+
+/*header*/
+.container header {
+  background-color: rgb(97, 169, 167);
+  grid-area: header;
+  height: 60px;
+}
+.container header h1 {
+  display: flex;
+  flex-direction: row;
+  color: rgb(246, 249, 249);
+  font-size: 14px;
+  justify-content: center;
+  text-align: center;
+  margin: 2%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/*nav*/
+.container nav {
+  background-color: rgb(107, 104, 104);
+  grid-area: nav;
+}
+.container nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+}
+.container nav li {
+  display: inline-block;
+  text-align: center;
+}
+.container nav a {
+  color: white;
+  font-size: 10px;
+  font-family: manrope;
+  text-decoration: none;
+}
+
+/*main*/
+.container main {
+  background-color: none;
+  grid-area: main;
+}
+
+.container div {
+  background-color: none;
+  border: none;
+  grid-template-areas: "first-child first-child first-child" "nth-child(2) nth-child(2) nth-child(2)" "nth-child(3) nth-child(3) nth-child(3)" "nth-child(4) nth-child(4) nth-child(4)" "nth-child(5) nth-child(5) nth-child(5)";
+}
+
+/*hijo1*/
+.container div:first-child {
+  background: none;
+  border: none;
+  grid-area: first-child;
+}
+.container div:first-child .color {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: rgb(97, 169, 167);
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 5%;
+}
+.container div:first-child .banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+}
+
+/*hijo2*/
+.container div:nth-child(2) {
+  background: none;
+  border: none;
+  grid-area: nth-child(2);
+}
+.container div:nth-child(2) .logo {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  margin-left: 25%;
+}
+.container div:nth-child(2) .anuncio {
+  color: rgb(237, 150, 221);
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 5%;
+  margin-top: 10%;
+  text-align: center;
+}
+.container div:nth-child(2) h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  color: rgb(174, 171, 171);
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 5%;
+}
+
+/*hijo3*/
+.container div:nth-child(3) {
+  background: none;
+  border: none;
+  grid-area: nth-child(3);
+  /*index*/
+  /*para el resto*/
+}
+.container div:nth-child(3) article {
+  color: rgb(97, 169, 167);
+  font-size: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 5%;
+  text-align: justify;
+}
+.container div:nth-child(3) iframe {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  width: 80%;
+  margin-left: 10%;
+}
+.container div:nth-child(3) .subtitulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(174, 171, 171);
+  font-size: 30px;
+  font-family: monospace;
+}
+.container div:nth-child(3) p {
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  color: rgb(152, 153, 153);
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: justify;
+}
+.container div:nth-child(3) h3 {
+  margin-left: 5%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(97, 169, 167);
+}
+
+/*hijo4*/
+.container div:nth-child(4) {
+  background: none;
+  border: none;
+  grid-area: nth-child(4);
+  margin-block-start: 3%;
+  margin-bottom: 8%;
+  /* articulo-contacto*/
+}
+.container div:nth-child(4) .subtitulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(174, 171, 171);
+  font-size: 30px;
+  font-family: monospace;
+}
+.container div:nth-child(4) p {
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  color: rgb(152, 153, 153);
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: justify;
+}
+.container div:nth-child(4) h3 {
+  margin-left: 5%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(97, 169, 167);
+}
+.container div:nth-child(4) article {
+  color: rgb(97, 169, 167);
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 5%;
+  text-align: justify;
+}
+
+/*hijo5*/
+.container div:nth-child(5) {
+  background-color: white;
+  border: white;
+  grid-area: nth-child(5);
+  columns: 2;
+  /*prueba:texto p:contacto*/
+}
+.container div:nth-child(5) .info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 90%;
+  margin-left: 10%;
+}
+.container div:nth-child(5) .boton {
+  width: 50%;
+  height: 30%;
+  background-color: rgb(97, 169, 167);
+  color: rgb(243, 243, 239);
+  font-size: 12px;
+  border-radius: 10px;
+  font-style: bold;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 15%;
+  margin-left: 30%;
+}
+.container div:nth-child(5) p {
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  color: rgb(152, 153, 153);
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: justify;
+}
+
+footer {
+  background-color: rgb(91, 91, 91);
+  grid-area: footer;
+}
+footer .media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  color: rgb(246, 248, 249);
+  font-size: 15px;
+  font-family: manrope;
+}
+
+.visual {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  margin-left: 15%;
+}
+
+.descripcion {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: rgb(152, 153, 153);
+  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: justify;
+}
+
+/*para nuevo y catálogo*/
+.card-img-top {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 60%;
+}
+
+.card-text {
+  color: rgb(152, 153, 153);
+  font-size: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  justify-items: left;
+  justify-content: left;
+  text-align: left;
+}
+
+/*para catálogo*/
+.d-block w-100 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.visualcat {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+}
+
+/*para nosotros*/
+.subtitulosnosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(97, 169, 167);
+  font-size: 20px;
+  font-family: monospace;
+}
+
+/*para contacto*/
+.formulario {
+  color: rgb(97, 169, 167);
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 10%;
+}
+
+.submit {
+  background-color: rgb(97, 169, 167);
+  color: white;
+}
+
+/* para adaptarlo en ipad*/
+@media screen and (min-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 35px 35px 1fr 10%;
+    grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+    gap: 5px;
+  }
+  /*header*/
+  .container header h1 {
+    font-size: 25px;
+  }
+  /*nav*/
+  .container nav a {
+    font-size: 14px;
+  }
+  /*hijo1*/
+  .container div:first-child .color {
+    font-size: 50px;
+  }
+  .container div:first-child .banner {
+    height: 300px;
+  }
+  /*hijo2*/
+  .container div:nth-child(2) .anuncio {
+    color: rgb(237, 150, 221);
+    font-size: 22px;
+  }
+  .container div:nth-child(2) h2 {
+    font-size: 22px;
+  }
+  /*hijo3*/
+  .container div:nth-child(3) {
+    background: none;
+    border: none;
+    grid-area: nth-child(3);
+  }
+  .container div:nth-child(3) article {
+    color: rgb(97, 169, 167);
+    font-size: 16px;
+  }
+  /*hijo4*/
+  .container div:nth-child(4) p {
+    font-size: 16px;
+  }
+  /*hijo5*/
+  .container div:nth-child(5) {
+    columns: 2;
+    /*prueba:texto p:contacto*/
+  }
+  .container div:nth-child(5) .info {
+    margin-left: 5%;
+  }
+  .container div:nth-child(5) .boton {
+    font-size: 14px;
+  }
+  .container div:nth-child(5) p {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    color: rgb(152, 153, 153);
+    font-size: 16px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: justify;
+  }
+  /*para index,promociones,temporada,kits*/
+  .visual {
+    width: 60%;
+  }
+  .descripcion {
+    font-size: 16px;
+  }
+  /*para nuevo y catálogo*/
+  .card-img-top {
+    height: 95%;
+    width: 85%;
+    margin-left: 10%;
+  }
+  .card-text {
+    font-size: 16px;
+  }
+  .visualcat {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+  }
+  /*para nosotros*/
+  .subtitulosnosotros {
+    font-size: 20px;
+  }
+}
+/* para adaptarlo en ipad*/
+@media screen and (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 35px 1fr 10%;
+    grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+    gap: 8px;
+  }
+  .container header {
+    height: 80px;
+  }
+  .container header h1 {
+    font-size: 35px;
+  }
+  .container nav a {
+    font-size: 18px;
+  }
+  .container div:first-child .banner {
+    height: 380px;
+  }
+  .container div:first-child .color {
+    font-size: 50px;
+  }
+  .container div:nth-child(2) {
+    columns: 2;
+    margin-bottom: 5%;
+  }
+  .container div:nth-child(2) .logo {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 60%;
+    justify-content: center;
+    margin-left: 30%;
+  }
+  .container div:nth-child(2) .anuncio {
+    font-size: 25px;
+  }
+  .container div:nth-child(2) h2 {
+    font-size: 25px;
+  }
+  .container div:nth-child(3) {
+    background: none;
+    border: none;
+    columns: 2;
+  }
+  .container div:nth-child(3) article {
+    color: rgb(97, 169, 167);
+    font-size: 18px;
+    margin-top: 10%;
+  }
+  .container div:nth-child(3) .subtitulos {
+    color: rgb(97, 169, 167);
+    font-size: 30px;
+    justify-content: left;
+  }
+  .container div:nth-child(3) p {
+    color: rgb(152, 153, 153);
+    font-size: 18px;
+    text-align: justify;
+  }
+  .container div:nth-child(3) .visual {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+  }
+  .container div:nth-child(4) {
+    columns: 2;
+  }
+  .container div:nth-child(4) .subtitulos {
+    color: rgb(97, 169, 167);
+    font-size: 30px;
+    justify-content: left;
+  }
+  .container div:nth-child(4) p {
+    color: rgb(152, 153, 153);
+    font-size: 18px;
+    text-align: justify;
+  }
+  .container div:nth-child(4) .visual {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+  }
+  .descripcion {
+    font-size: 16px;
+    text-align: center;
+  }
+  /*para nuevo y catálogo*/
+  .card-img-top {
+    height: 100%;
+    width: 90%;
+  }
+  .card-text {
+    font-size: 14px;
+    justify-content: center;
+    text-align: left;
+    margin-left: 35%;
+  }
+  /*para catálogo*/
+  .visualcat {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 3%;
+  }
+  /*para nosotros*/
+  .subtitulosnosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(97, 169, 167);
+    font-size: 30px;
+    font-family: monospace;
+    margin-top: 15%;
+  }
+  .container div:nth-child(5) {
+    columns: 3;
+    /*para contacto*/
+    /*prueba:texto p:contacto*/
+  }
+  .container div:nth-child(5) .boton-formulario {
+    font-size: 16px;
+  }
+  .container div:nth-child(5) p {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    color: rgb(152, 153, 153);
+    font-size: 16px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: justify;
+  }
+  /* para adaptarlo a escritorio */
+}
+@media screen and (min-width: 1024px) and (min-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 35px 1fr 10%;
+    grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+    gap: 8px;
+  }
+  .container header {
+    height: 100px;
+  }
+  .container header h1 {
+    font-size: 40px;
+    justify-content: center;
+  }
+  .container nav {
+    background-color: white;
+    grid-area: nav;
+  }
+  .container nav a {
+    color: rgb(107, 104, 104);
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
+  }
+  .container div:first-child .banner {
+    height: 460px;
+  }
+  .container div:first-child .color {
+    font-size: 60px;
+  }
+  .container div:first-child .anuncio {
+    font-size: 30px;
+  }
+  .container div:first-child h2 {
+    font-size: 25px;
+  }
+  .visual {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+  }
+  .descripcion {
+    font-size: 18px;
+    text-align: center;
+  }
+  /*para nuevo y catálogo*/
+  .card-img-top {
+    height: 120%;
+    width: 110%;
+  }
+  .card-text {
+    font-size: 14px;
+    margin-left: 35%;
+  }
+  /*para nosotros*/
+  .subtitulosnosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 8%;
+  }
+  /*para contacto*/
+  article {
+    color: rgb(97, 169, 167);
+    font-size: 16px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin: 5%;
+    text-align: justify;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
