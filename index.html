@@ -9,7 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- animation -->
+   
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="css/styles.css">
 
     <!-- agrego el seo -->
     <title>DARU, Ilumina tu vida</title>
@@ -19,7 +24,7 @@
      naturales y orgánicas para el cuidado de tu piel.">
 
      <meta name="keywords" content="DARU, ilumina tu vida, velas, velas aromáticas, velas artesanales,
-     jabones, cuidado de la piel">
+     jabones, cuidado de la piel, promociones de velas, promociones de jabones, catálogo">
 
      <meta name="author" content="Ale Fentanes">
 </head>
@@ -28,7 +33,7 @@
     <!-- general -->
     <section class="container">
     <header>
-        <h1>ENVÍOS GRATIS A TODA LA REPUBLICA A PARTIR DE $999</h1>
+        <h1 class="animate__animated animate__heartBeat">ENVÍOS GRATIS A TODA LA REPUBLICA A PARTIR DE $999</h1>
     </header>
 
     <nav>
@@ -63,7 +68,7 @@
         <div>
         <!-- hijo1 -->
          <div class="fist-child">
-            <img  class="banner" src="img/banner.jpg" alt="Banner"> 
+            <img  class="banner" data-aos="fade-up" src="img/banner.jpg" alt="Banner"> 
             <h2 class="color">Ilumina tu vida</h2>
         </div>
         <!-- hijo2 -->
@@ -107,7 +112,6 @@
                 En DARU jabones artesanos de forma tradicional y con ingredientes naturales que aportan todo su potencial
                 a la piel, para limpiarla y cuidarla de forma saludable y terapéutica.</p>
         </div>
-
         <!-- <div class="grilla"> -->
         <!-- hijo5 -->
     <div class="nth-child(5)">
@@ -149,7 +153,12 @@
 
         <a class="media" href="https://www.facebook.com/Daruhandcraft">Ir a Facebook</a>
     </footer>
-    </section> 
+    </section>
+    <!-- libreria animación -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
    

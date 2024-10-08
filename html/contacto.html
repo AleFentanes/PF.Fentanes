@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/styles.css">
 
     <!-- agrego el seo -->
@@ -28,7 +32,7 @@
 <body>
     <section class="container">
     <header>
-        <h1>ENVÍOS GRATIS A TODA LA REPUBLICA A PARTIR DE $999</h1>
+        <h1 class="animate__animated animate__heartBeat">ENVÍOS GRATIS A TODA LA REPUBLICA A PARTIR DE $999</h1>
     </header>
     
     <nav>
@@ -64,10 +68,9 @@
         <div>
             <!-- hijo1 -->
          <div class="fist-child">
-            <img  class="banner" src="../img/banner.contacto.jpg" alt="Banner"> 
+            <img  class="banner" data-aos="fade-up" src="../img/banner.contacto.jpg" alt="Banner"> 
             <h2 class="color">Ilumina tu vida</h2>
         </div>
-
             <!-- hijo2 -->
         <div class="nth-child(2)">
             <img class="logo" src="../img/logo.jpg" alt="Daru logo">
@@ -76,7 +79,6 @@
                  nuestra prioridad ¡Déjanos cuidarte como te mereces!</p>
             <h2>Contacto</h2>
         </div> 
-        
             <!-- hijo3 -->
          <div class="nth-child(3)">
             <p>¿CÓMO CONTACTARNOS?¡Te compartimos este espacio para que nos escribas sobre tus productos favoritos!
@@ -97,7 +99,6 @@
                   </form>
             </div>
         </div>
-
             <!-- hijo4 -->
          <div class="nth-child(4)">
                 <h3>¡RECIBE LAS MEJORES NOTICIAS DE MANERA INMEDIATA!</h3>
@@ -105,7 +106,6 @@
                     descuentos y novedades de nuestro productos directamente a tu bandeja de entrada.
                     Por favor, completa el formulario para que podamos contactarte. </article>
         </div>
-    
             <!-- <div class="grilla"> -->
             <!-- hijo5 -->
         <div class="nth-child(5)">
@@ -131,6 +131,11 @@
         <a class="media" href="https://www.facebook.com/Daruhandcraft">Ir a Facebook</a>
     </footer>
     </section>   
+<!-- libreria animación -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
           

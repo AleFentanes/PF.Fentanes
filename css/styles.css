@@ -217,7 +217,7 @@
   border: white;
   grid-area: nth-child(5);
   columns: 2;
-  /*prueba:texto p:contacto*/
+  /*texto p:contacto*/
 }
 .container div:nth-child(5) .info {
   display: flex;
@@ -249,20 +249,6 @@
   font-size: 16px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: justify;
-}
-
-footer {
-  background-color: rgb(91, 91, 91);
-  grid-area: footer;
-}
-footer .media {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  color: rgb(246, 248, 249);
-  font-size: 15px;
-  font-family: manrope;
 }
 
 .visual {
@@ -338,6 +324,20 @@ footer .media {
   color: white;
 }
 
+footer {
+  background-color: rgb(91, 91, 91);
+  grid-area: footer;
+}
+footer .media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  color: rgb(246, 248, 249);
+  font-size: 15px;
+  font-family: manrope;
+}
+
 /* para adaptarlo en ipad*/
 @media screen and (min-width: 800px) {
   .container {
@@ -377,7 +377,7 @@ footer .media {
     grid-area: nth-child(3);
   }
   .container div:nth-child(3) article {
-    color: rgb(97, 169, 167);
+    color: rgb(97, 169, 167); /*variable*/
     font-size: 16px;
   }
   /*hijo4*/
@@ -387,7 +387,7 @@ footer .media {
   /*hijo5*/
   .container div:nth-child(5) {
     columns: 2;
-    /*prueba:texto p:contacto*/
+    /*texto p:contacto*/
   }
   .container div:nth-child(5) .info {
     margin-left: 5%;
@@ -399,7 +399,6 @@ footer .media {
     margin-right: 5%;
     margin-left: 5%;
     margin-bottom: 2%;
-    color: rgb(152, 153, 153);
     font-size: 16px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     text-align: justify;
@@ -557,7 +556,7 @@ footer .media {
   .container div:nth-child(5) {
     columns: 3;
     /*para contacto*/
-    /*prueba:texto p:contacto*/
+    /*exto p:contacto*/
   }
   .container div:nth-child(5) .boton-formulario {
     font-size: 16px;
