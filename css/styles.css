@@ -224,7 +224,7 @@
   flex-direction: column;
   height: 80%;
   width: 70%;
-  margin-left: 10%;
+  margin-left: 15%;
   margin-bottom: 3%;
 }
 .container div:nth-child(5) .boton {
@@ -259,7 +259,7 @@
   width: 70%; /*estaba en 60%*/
   margin-top: 5%;
   margin-bottom: 3%;
-  margin-left: 10%; /*estaba en 15%*/
+  margin-left: 15%;
 }
 
 .descripcion {
@@ -277,10 +277,11 @@
   flex-direction: column;
   height: 100%; /*estaba en 70/60*/
   width: 90%;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 
 .card-text {
+  margin-left: 15%;
   color: rgb(152, 153, 153);
   font-size: 12px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -505,7 +506,7 @@ footer .media {
     flex-direction: column;
     width: 55%;
     margin-top: 5%;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     margin-left: 15%;
   }
   .container div:nth-child(4) {
