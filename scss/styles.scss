@@ -16,7 +16,6 @@ $colorSecundario:  rgb(97, 169, 167);
         "main main main"
         "footer footer footer";
         gap: 5px;}
-
 /*header*/
 .container header{
     background-color:$colorSecundario;
@@ -34,7 +33,6 @@ $colorSecundario:  rgb(97, 169, 167);
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 }
-    
 /*nav*/
 .container nav{
     background-color: rgb(107, 104, 104);
@@ -60,7 +58,6 @@ $colorSecundario:  rgb(97, 169, 167);
         text-decoration: none;
     }
 }
-
 /*main*/
 .container main{
     background-color:none;
@@ -77,7 +74,6 @@ $colorSecundario:  rgb(97, 169, 167);
         "nth-child(4) nth-child(4) nth-child(4)"
         "nth-child(5) nth-child(5) nth-child(5)";  
 }
-
     /*hijo1*/   
     .container div:first-child{
         background:none;
@@ -99,10 +95,9 @@ $colorSecundario:  rgb(97, 169, 167);
         display: flex;
         flex-direction: row;
         justify-content: center;
-        height: 100px;
+        max-width: 100%;
     }
 }
-
 /*hijo2*/
 .container div:nth-child(2){
     background: none;
@@ -139,17 +134,15 @@ h2{
     padding: 5%;
 }
 }
-
 /*hijo3*/
 .container div:nth-child(3){
     background: none;
     border: none;
     grid-area: nth-child(3);
-
 /*index*/
 article{
     color:$colorSecundario; 
-    font-size: 14px; 
+    font-size: 15px; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 5%;
     text-align: justify; 
@@ -162,7 +155,6 @@ iframe{
     width: 80%;
     margin-left: 10%;
 }
-
 /*para el resto*/
 .subtitulos{
     display: flex;
@@ -192,7 +184,6 @@ h3{
     color:$colorSecundario; 
 }
 }
-
 /*hijo4*/
 .container div:nth-child(4){
     background: none;
@@ -231,26 +222,26 @@ h3{
 /* articulo-contacto*/
 article{
     color: $colorSecundario; 
-    font-size: 16px; 
+    font-size: 15px; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 5%;
     text-align: justify; 
 }
 }
-
 /*hijo5*/
 .container div:nth-child(5){
     background-color: white;
     border: white;
     grid-area: nth-child(5); 
-    columns: 2;
+    columns: 1;
 
 .info{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 90%;
+    height: 90%;
+    width: 80%;
     margin-left: 10%; 
+    margin-bottom: 3%;
 }
 
 .boton{
@@ -258,7 +249,7 @@ article{
     height: 30%;
     background-color: $colorSecundario; 
     color: rgb(243, 243, 239);
-    font-size: 12px;
+    font-size: 16px;
     border-radius: 10px;
     font-style: bold;
     justify-content: center;
@@ -266,9 +257,9 @@ article{
     text-align: center;
     margin-top: 2%;
     margin-bottom: 15%;
-    margin-left: 30%;
+    margin-left: 25%; 
+    text-decoration: none;
 }
-
 /*texto p:contacto*/
 p{
     margin-right: 5%;
@@ -284,10 +275,10 @@ p{
 .visual{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 80%; /*estaba en 60%*/
     margin-top: 5%;
     margin-bottom: 3%; 
-    margin-left: 15%;
+    margin-left: 10%; /*estaba en 15%*/
 }
 .descripcion{
     margin-top: 5%;
@@ -297,23 +288,22 @@ p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
 }
-
 /*para nuevo y catálogo*/
 .card-img-top{
     display: flex;
     flex-direction: column;
-    height: 70%; 
-    width: 60%; 
+    height: 100%; /*estaba en 70/60*/
+    width: 90%; 
+    margin-left: 10%;
 }
 .card-text{
     color: $colorPrimario;
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    justify-items: left;
-    justify-content: left;
-    text-align: left;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
 }
-
 /*para catálogo*/
 .d-block w-100{
     display: flex;
@@ -327,7 +317,6 @@ p{
     width: 90%;
     margin-left: 5%;
 }
-
 /*para nosotros*/
 .subtitulosnosotros{
     display: flex;
@@ -340,16 +329,19 @@ p{
 
 /*para contacto*/
 .formulario{
-    color: $colorSecundario; 
-    font-size: 16px;
+    color: rgb(237, 150, 221); 
+    font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 10%; 
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 .submit{
-    background-color:$colorSecundario; 
+    background-color:rgb(237, 150, 221); 
     color: white;
+    margin-bottom: 5%;
 }
-
+/*footer*/
 footer{
     background-color: rgb(91, 91, 91);
     grid-area: footer;
@@ -395,16 +387,12 @@ footer{
     .color{
         font-size:50px; 
     }
-    .banner{
-        height:300px; 
-    }
 }
-
     /*hijo2*/
     .container div:nth-child(2){
     .anuncio{
         color: rgb(237, 150, 221);
-        font-size: 22px;
+        font-size: 24px;
     }
     h2{
         font-size: 22px; 
@@ -415,27 +403,28 @@ footer{
         background: none;
         border: none;
         grid-area: nth-child(3);
-    
     article{
         color: $colorSecundario; /*variable*/
-        font-size: 16px;
+        font-size: 18px;
+    }
+    p{
+        font-size: 17px; 
     }
 }
     /*hijo4*/
     .container div:nth-child(4){
     p{
-        font-size: 16px; 
+        font-size: 17px; 
     }
 }
     /*hijo5*/
     .container div:nth-child(5){
         columns: 2;
     .info{
-        margin-left: 5%; 
-    }
-    .boton{
-        font-size: 14px; 
-    }
+        height: 95%; /*estaban en 100/90*/
+        width: 85%;
+        margin-left: 8%; 
+        }
     /*texto p:contacto*/
     p{
         margin-right: 5%;
@@ -448,20 +437,21 @@ footer{
 }
     /*para index,promociones,temporada,kits*/
     .visual{
-        width: 60%; 
+        width: 70%; 
+        margin-left: 15%; 
     }
     .descripcion{
         font-size: 16px; 
     }
     /*para nuevo y catálogo*/
     .card-img-top{
-        height: 95%;
-        width: 85%; 
+        height: 110%;
+        width: 100%; 
         margin-left: 10%;
-    }
+}
     .card-text{
-        font-size: 16px;
-    }
+        font-size: 14px;
+}
     .visualcat{
         display: flex;
         flex-direction: column;
@@ -500,11 +490,12 @@ a{
 }
 }
 .container div:first-child{ 
-.banner{
-    height: 380px;
-}
 .color{
     font-size:50px;
+}
+.banner{
+    height: 470px;
+    max-width: 100%;
 }
 }
 .container div:nth-child(2){
@@ -551,6 +542,7 @@ p{
     margin-bottom: 3%; 
     margin-left: 15%;
 }
+
 }
 .container div:nth-child(4){
     columns: 2;
@@ -659,9 +651,7 @@ a{
 }
 }
 .container div:first-child{ 
-.banner{
-    height: 460px;
-}
+
 .color{
     font-size:60px;
 }
