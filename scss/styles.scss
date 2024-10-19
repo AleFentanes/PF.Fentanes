@@ -9,7 +9,7 @@ $colorSecundario:  rgb(97, 169, 167);
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 35px 35px 1fr 10%;
+    grid-template-rows: 35px 35px 1fr 5%; /*footer estaba en 10%*/
     grid-template-areas:
         "header header header"
         "nav nav nav"
@@ -375,7 +375,7 @@ footer{
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 35px 35px 1fr 10%;
+        grid-template-rows: 35px 35px 1fr 5%; /*footer estaba en 10%*/
         grid-template-areas:
             "header header header"
             "nav nav nav"
@@ -496,7 +496,7 @@ footer{
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 60px 35px 1fr 10%;
+        grid-template-rows: 60px 35px 1fr 5%; /*footer estaba en 10%*/
         grid-template-areas:
             "header header header"
             "nav nav nav"
@@ -658,7 +658,7 @@ footer{
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 60px 35px 1fr 10%;
+        grid-template-rows: 60px 35px 1fr 5%; /*footer estaba en 10%*/
         grid-template-areas:
             "header header header"
             "nav nav nav"
