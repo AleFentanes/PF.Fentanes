@@ -476,18 +476,16 @@ footer{
         font-size: 20px; 
     } 
     /*footer*/
-footer{
-.insta{
-    width: 10%;
-    margin-left: 30%;
+    footer{
+    .insta{
+        margin-left: 30%;
+    }
+    .face{
+        margin-left: 30%;
+    }
+    .media{
+        font-size: 18px;
 }
-.face{
-    width: 10%;
-    margin-left: 30%;
-}
-.media{
-    font-size: 18px;
- }
 }
 }
 
@@ -643,29 +641,14 @@ p{
     text-align: justify;
 }
 }
- /*footer*/
- footer{
-    .insta{
-        width: 10%;
-        margin-left: 30%;
-    }
-    .face{
-        width: 20%;
-        margin-left: 30%;
-    }
-    .media{
-        font-size: 18px;
-     }
-    }
 }
-
 
 /* para adaptarlo a escritorio */
 @media screen and (min-width:1200px) {
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 60px 35px 1fr 2%; /*footer estaba en 5%*/
+        grid-template-rows: 60px 35px 1fr 4%; /*footer estaba en 5%*/
         grid-template-areas:
             "header header header"
             "nav nav nav"
@@ -740,5 +723,14 @@ article{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 5%;
     text-align: justify; 
+}
+/*footer*/
+footer{
+.insta{
+    margin-left:45%;
+}
+.face{
+    width: 20%;
+}
 }
 }

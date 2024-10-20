@@ -451,11 +451,9 @@ footer .media {
   }
   /*footer*/
   footer .insta {
-    width: 10%;
     margin-left: 30%;
   }
   footer .face {
-    width: 10%;
     margin-left: 30%;
   }
   footer .media {
@@ -603,25 +601,13 @@ footer .media {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     text-align: justify;
   }
-  /*footer*/
-  footer .insta {
-    width: 10%;
-    margin-left: 30%;
-  }
-  footer .face {
-    width: 20%;
-    margin-left: 30%;
-  }
-  footer .media {
-    font-size: 18px;
-  }
 }
 /* para adaptarlo a escritorio */
 @media screen and (min-width: 1200px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60px 35px 1fr 2%; /*footer estaba en 5%*/
+    grid-template-rows: 60px 35px 1fr 4%; /*footer estaba en 5%*/
     grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
     gap: 8px;
   }
@@ -686,6 +672,13 @@ footer .media {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     margin: 5%;
     text-align: justify;
+  }
+  /*footer*/
+  footer .insta {
+    margin-left: 45%;
+  }
+  footer .face {
+    width: 20%;
   }
 }
 
