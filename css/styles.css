@@ -363,7 +363,7 @@ footer .media {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 35px 35px 1fr 2%; /*footer estaba en 5%*/
+    grid-template-rows: 35px 35px 1fr 3%; /*footer estaba en 5%*/
     grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
     gap: 5px;
   }
@@ -467,7 +467,7 @@ footer .media {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60px 35px 1fr 2%; /*footer estaba en 5%*/
+    grid-template-rows: 60px 35px 1fr 3%; /*footer estaba en 5%*/
     grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
     gap: 8px;
   }
